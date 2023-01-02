@@ -1,214 +1,90 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
   }
-  .hero-section {
-    background-image: url(https://xbox-store-checker.com/assets/upload/game/2019/02/optimize/9wzdncrfj3tj-background.jpg);
-    background-color: #222;
-    color: white;
-    text-align: center;
-    padding: 50px 0;
-    background-size: cover;
-    background-position: center;
-  }
-  button{
-    max-width: 300px;
-    margin: auto;
-  }
-  .pricing-section {
-    padding: 50px 0;
-  }
-  table {
-    margin: auto;
-    border-collapse: collapse;
-  }
-  td,
-  th {
-    border: 1px solid #ccc;
-    padding: 10px;
-    height: 60px;
-    width: 100px;
-  }
-  th {
-    background-color: #333;
-    color: white;
-  }
-  .contact-section {
-    background-color: #222;
-    color: white;
-    padding: 50px 0;
-    text-align: center;
-  }
-  form {
-    max-width: 500px;
-    margin: auto;
-    padding: 20px;
-  }
-  label,
-  input,
-  textarea,
-  button {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
-  }
-  label {
-    color: #ccc;
-  }
-  input,
-  textarea {
-    background-color: #333;
-    color: #ccc;
-    border: none;
-    padding: 10px;
-  }
-  button {
-    background-color: #e50914;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-  }
-  button:hover{
-    background-color: #a8070f;
-  }
-  .movie-section {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-}
-
-/* Style the movie poster */
-.movie-poster {
-    width: 400px;
-    height: 450px;
-    margin: 0 auto;
   
-}
-
-.movie-poster img {
-  height: 100%;
-  width: 100%;
-}
-
-/* Style the movie trailer */
-.movie-trailer {
-    width: 560px;
-    height: 315px;
-    margin: auto 15px;
-}
-
-.movie-trailer iframe {
-  height: 100%;
-  width: 100%;
-}
-
-/* Style the movie text */
-#movie-text {
-    font-size: 18px;
-    line-height: 1.5;
-}
-
-/* Style the movie title */
-.movie-title {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-/* Style the movie description */
-.movie-description {
-    margin-bottom: 8px;
-}
-
-/* Style the movie release date */
-.movie-release-date {
-    font-style: italic;
-}
-
-.footer {
-padding: 25px 20px;
-background: #333;
-color: white;
-min-height: 150px;
-display: flex;
-justify-content: space-between;
-}
-
-
-.footer-links ul {
-list-style: none;
-margin: 0;
-padding: 0;
-}
-
-.footer-links li {
-display: inline-block;
-}
-
-.footer-links a {
-text-decoration: none;
-padding: 0 10px;
-color: grey;
-}
-
-.footer-links a:hover{
-  color: white;
-}
-
-.social-media-links ul {
-list-style: none;
-margin: 0;
-padding: 0;
-}
-
-.social-media-links li {
-display: inline-block;
-}
-
-.social-media-links a {
-text-decoration: none;
-padding: 0 10px;
-color: grey;
-}
-
-
-.social-media-links a:hover {
-color: white;
-}
-
-.social-media-links i {
-font-size: 20px;
-}
-
-
-
-@media only screen and (max-width: 1100px) {
-
-  .movie-poster{
-    width: 350px;
-    height: 300px;
+  h1 {
+  text-align: center;
+  color: #333;
+  margin: 20px 0;
   }
-
-  .movie-trailer{
-      width: 460px;
-      height: 315px;
+  
+  h2 {
+  color: #666;
+  text-align: center;
+  margin: 10px 0;
   }
-}
-
-@media only screen and (max-width: 900px) {
-
-  .movie-poster{
-    width: 250px;
-    height: 200px;
+  
+  #prices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  font-size: 15px;
   }
-
-  .movie-trailer{
-      width: 300px;
-      height: 205px;
+  
+  #prices-chart {
+  width: 800px;
+  height: 400px;
+  border: 1px solid #ccc;
   }
-}
+  
+  #portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+  }
+  
+  .cryptocurrency {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  }
+  
+  .balance {
+  font-weight: bold;
+  margin: 20px 0;
+  }
+  
+  #buy-sell-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+  }
+  
+  #buy-sell-form label {
+  display: block;
+  margin: 10px 0;
+  }
+  
+  #buy-sell-form input[type="number"] {
+  width: 200px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0 10px;
+  }
+  
+  #buy-sell-form button[type="submit"] {
+  width: 100px;
+  height: 30px;
+  background-color: #00b300;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  }
+  
+  #sell-button {
+  width: 100px;
+  height: 30px;
+  background-color: #d80000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  }
