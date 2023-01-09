@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="app.css">
+  </head>
+  <body>
+    <h1>Crypto Portfolio</h1>
+
+    <h2>Prices</h2>
+    <div id="prices">
+      
+    </div>
+
+    <h2>Portfolio</h2>
+    <div id="portfolio">
+      <div id="balance">Balance: $10000</div>
+    </div>
+
+    <h2>Buy/Sell</h2>
+    <form id="buy-sell-form">
+      <label for="currency">Currency:</label>
+      <select id="currency" name="currency">
+        <!-- Options for currency dropdown will be generated using the API -->
+      </select>
+      <label for="units">Units:</label>
+      <input type="number" id="units" name="units" />
+      <label for="price">Price:</label>
+      <input type="number" id="price" name="price" readonly />
+      <label for="total">Total:</label>
+      <input type="number" id="total" name="total" readonly />
+      <button type="submit">Buy</button>
+      <button type="button" id="sell-button">Sell</button>
+    </form>
+
+    <script src="./app.js" ></script>
+  </body>
+</html>
