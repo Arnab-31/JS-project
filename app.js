@@ -14,15 +14,15 @@ class Portfolio {
   }
 
   // Remove a cryptocurrency from the portfolio
-  removeCryptocurrency(name) {
-    if (this.cryptocurrencies.has(name)) {
-      let currentQuantity = this.cryptocurrencies.get(name);
-      if (currentQuantity == 0) {
-        this.cryptocurrencies.delete(name);
-      }
+  removeCryptocurrency(name, units) {
+    const currentQuantity = this.cryptocurrencies.get(name);
+    this.cryptocurrencies.set(name, currentQuantity-units);
+
+    // If there are no more units of the cryptocurrency, remove it from the portfolio
+    if (this.cryptocurrencies.get(name) === 0) {
+      this.cryptocurrencies.delete(name);
     }
   }
-
 }
 
 
@@ -157,14 +157,7 @@ const total = units * this.prices[currency].USD;
 this.balance += total;
 
 // Remove the units from the cryptocurrency in the portfolio
-const currentQuantity = this.portfolio.cryptocurrencies.get(currency);
-this.portfolio.cryptocurrencies.set(currency, currentQuantity-units);
-
-
-// If there are no more units of the cryptocurrency, remove it from the portfolio
-if (this.portfolio.cryptocurrencies.get(currency) === 0) {
-  this.portfolio.removeCryptocurrency(currency);
-}
+this.portfolio.removeCryptocurrency(currency, units);
 this.savePortfolioData();
 // Update the UI
 this.updatePortfolio();
@@ -206,5 +199,5 @@ this.priceInput.value = price;
 }
 
 
-window.portfolio = Portfolio;
+window.Portfolio = Portfolio;
 window.balance = balance;
